@@ -20,7 +20,8 @@ html.home{
 }
 
 #home{
-	padding-bottom: 50px;
+	// padding-bottom: 50px;
+	height: 100%;
 }
 
 #home .page-content{
@@ -29,14 +30,13 @@ html.home{
 }
 
 #home .hero{
+	margin: 0;
 	width: 100%;
-	height: 450px;
-	background: image-url("home/driver.jpg") center center no-repeat;
-	background-size: 1600px 700px;
+	height: 405px;
+	background: image-url("home/driver.jpg") top left no-repeat;
+	background-size: 100% auto;
 	overflow: hidden;
-	position: relative;
-	letter-spacing: .09em;
-	margin: 0 auto;
+	display: table;
 }
 
 #home .hero .large{
@@ -45,7 +45,6 @@ html.home{
 	font-size: 40px;
 	color: #ffffffe0;
 	text-transform: uppercase;
-	margin: 150px 0 0 0;
 	position: relative;
 	z-index: 2;
 	letter-spacing: 2px;
@@ -64,16 +63,23 @@ html.home{
 	letter-spacing: 1px;
 }
 
-#home .form-wrap{
-	height: 80px;
-	width: 411px;
-	margin: 23px auto 0;
+#home .title-wrap{
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+	display: table-cell;
+	vertical-align: middle;
 }
 
-#home .title-wrap{
-	height: 80px;
-	width: 500px;
-	margin: 23px auto 0;
+#home .form-wrap{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background-color: #2b2f33;
+	padding-top: 70px;
+	padding-bottom: 110px;
+	margin: -1px 0px -2px 0px;
 }
 
 #home .form-wrap .key{
@@ -87,34 +93,53 @@ html.home{
 #home .form-wrap .byline{
 	font-size: 15px;
 	text-transform: uppercase;
-	color: #ffffffe0;
+	color: white;
 	text-align: center;
 	font-weight: bold;
 	letter-spacing: 2px;
 	margin: 15px 0;
 }
 
+.new_user_form {
+	max-width: 445px;
+	margin: 0 auto;
+}
+
 #home .form-wrap .email{
-	float: left;
-	font-size: 13px;
-	padding: 8px 0 8px 10px;
-	border: 1px solid #0B5966;
-	width: 256px;
-	outline: none;
-	letter-spacing: 1px;
+  float: left;
+
+	background: image-url("email/email.png");
+  background-size: 20px 17px;
+  background-repeat:no-repeat;
+  background-position: 98%;
+  background-color: white;
+  border-radius: 0;
+  outline: 0;
+ 
+  margin-bottom: 0px;
+  padding: 0px 28px 0px 5px !important;
+ 
+ 	border-style: none !important;
+ 	max-width:300px !important;
+ 	width: 100%;
+  height: 37px !important;
+
 }
 
 #home .form-wrap .submit{
-	width: 143px;
-	background: #0B5966;
-	float: left;
+  float: left;
+	max-width: 145px;
+	width: 100%;
 	height: 37px;
 	line-height: 37px;
+	border: 0;
+	background: #0B5966;
 	color: #FFF;
 	font-size: 13px;
 	text-transform: uppercase;
-	border: 0;
 	letter-spacing: 2px;
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
 }
 
 #home .form-wrap.ended{
@@ -245,13 +270,6 @@ html.home{
 	background: #FFF;
 }
 
-#refer .page-content{
-	width: 1120px;
-	margin: 0 auto;
-	z-index: 0;
-	position: relative;
-}
-
 #refer .header{
 	height: 70px;
 	background: #0B5966;
@@ -293,17 +311,32 @@ html.home{
 
 #refer .hero{
 	background: #F1F0EE;
-	height: 391px;
+	// height: 391px;
 	overflow: hidden;
 }
 
+#refer .page-content{
+	max-width: 1120px;
+	width: 100%;
+	margin: 0 auto;
+
+	z-index: 0;
+	position: relative;
+	display: table;
+}
+
+
+
 #refer .mammoth{
-	width: 612px;
+	width: 50%;
+	// width: 612px;
 	height: 394px;
+
 	background: image-url("refer/handingpackage.jpg") 0 0 no-repeat;
-	background-size: 610px 394px;
+	background-size: 100% 100%;
 	overflow: hidden;
-	float: left;
+	// float: left;
+	display: table-cell;
 }
 
 #refer .mammoth .need{
@@ -311,7 +344,8 @@ html.home{
   font-size: 35px;
   text-transform: uppercase;
   font-weight: bold;
-  margin: 250px 0 0 160px;
+  // margin: 250px 0 0 160px;
+  margin: 250px auto 0px auto;
   display: block;
   line-height: 36px;
   letter-spacing: 4px;
@@ -320,19 +354,19 @@ html.home{
 }
 
 #refer .share-wrap{
-	float: right;
-	width: 400px;
+	width: 50%;
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: .13em;
-	margin-right: 60px;
+	display: table-cell;
+	vertical-align: middle;
 }
 
 #refer .share-wrap .why{
 	font-size: 16px;
 	color: #555556;
 	font-weight: bold;
-	margin-top: 42px;
+	margin-top: 20px;
 }
 
 #refer .share-wrap .title{
@@ -415,25 +449,26 @@ html.home{
 	text-transform: uppercase;
 }
 
+
 #refer .prizes .progress{
+	margin-top: 35px;
+	margin-bottom: 15px;
 	height: 4px;
 	width: 100%;
 	background: image-url("refer/progress-bg.png") 0 0 repeat-x;
 	background-size: 1px 4px;
-	position: absolute;
-	top: 100px;
-	z-index: 0;
 }
 
+
 #refer .prizes .progress .mover{
-	position: absolute;
-	top: 0;
-	left: 0;
+	// position: absolute;
+	// top: 0;
+	// left: 0;
 }
 
 #refer .prizes .progress .mover .bar{
 	background: image-url("refer/progress-done.png") 0 0 repeat-x;
-	width: 165px;
+	width: 100%;
 	height: 4px;
 	-webkit-background-size: 1px 4px;
 	background-size: 1px 4px;
@@ -460,18 +495,19 @@ html.home{
 	font-weight: 500;
 	font-size: 14px;
 	float: left;
-	margin-right: 68px;
-	width: 165px;
+	text-align: center;
+	width: 20%;
 	font-weight: bold;
 }
 
 #refer .prizes .products li.title .friends{
-	margin-top: 7px;
+	height: 30px;
+	line-height: 30px;
 	letter-spacing: 2px;
 }
 
 #refer .prizes .products li.title .rewards{
-	margin-top: 45px;
+	// margin-top: 45px;
 	letter-spacing: 2px;
 }
 
@@ -479,7 +515,8 @@ html.home{
 	height: 100%;
 	color: #555556;
 	width: 125px;
-	margin-right: 129px;
+	text-align: center;
+	width: 20%;
 	float: left;
 	position: relative;
 }
@@ -496,6 +533,10 @@ html.home{
 	background: #F1F0EE;
 	font-weight: bold;
 	margin: 0 auto;
+
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
 #refer .prizes .products li.product .sep{
@@ -612,7 +653,6 @@ html.home{
 }
 
 
-
 /*
 	RETINA
 */
@@ -620,10 +660,10 @@ html.home{
 only screen and (-o-min-device-pixel-ratio: 2/1),
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min-device-pixel-ratio: 2) {
-	#home .hero{
-		background: image-url("home/driver.jpg") center center no-repeat;
-		background-size: 1600px 755px;
-	}
+	// #home .hero{
+	// 	background: image-url("home/driver.jpg") center center no-repeat;
+	// 	background-size: 1600px 755px;
+	// }
 
 	#home .form-wrap .key{
 		background: image-url("home/key@2x.png") 0 0 no-repeat;
@@ -671,5 +711,80 @@ only screen and (min-device-pixel-ratio: 2) {
 	#refer .prizes .products li.product.selected .caret{
 		background: image-url("refer/caret-selected@2x.png") center center no-repeat;
 		background-size: 16px 10px;
+	}
+}
+
+
+.dots-area {
+	display: table-cell;
+	width: 40%;
+}
+
+.letter-area {
+	display: table-cell;
+	width: 60%;
+}
+
+/*
+responsive styles
+*/
+
+@media (max-width: 1120px) { 
+	#refer .page-content{
+		display: block;
+		text-align: center;
+	}
+	#refer .mammoth{
+		width: 100%;
+		display: block;
+		background-size: auto 394px;
+		background-position: center;
+	}
+
+	#refer .share-wrap{
+		padding: 30px 5px;
+		width: 100%;
+		display: block;
+	}
+}
+
+@media (max-width: 858px) { 
+	#home .hero{
+		background-size: auto 100%;
+	}
+
+}
+
+@media (max-width: 496px) { 
+	.dot {
+		display: none;
+	}
+	.dots-area {
+		display: none;
+	}
+
+	#home .hero .large{
+		font-size: 35px;
+	}
+
+	#home .form-wrap .email{
+	  float: none;
+	  display: block;
+	  margin: 0 auto;
+	}
+
+	#home .form-wrap .submit{
+	  float: none;
+	  display: block;
+	  margin: 10px auto;
+	}
+
+	#refer .prizes .products li.title .rewards{
+		letter-spacing: .4px;
+	}
+
+	#refer .prizes .products li.title .friends{
+		line-height: 20px;
+		letter-spacing: .4px;
 	}
 }

@@ -1,7 +1,7 @@
 <div class="header">
   <div class="content">
     <p class="logo brandon">Harry&#8217;s</p>
-    <p class="byline brandon">THANK YOU FOR SIGNING UP</p>
+<!--     <p class="byline brandon">THANK YOU FOR SIGNING UP</p> -->
   </div>
 </div>
 
@@ -13,7 +13,9 @@
     <div class="share-wrap">
       <p class="why brandon">Don't leave your friends behind</p>
       <p class="title brandon">INVITE FRIENDS &<br>Earn Discounts</p>
-      <p class="subtitle brandon">Share your unique link via email, Facebook<br>or Twitter and earn a bigger discount for<br>each friend who signs up.</p>
+      <p class="subtitle brandon">
+        Share your unique link via email, Facebook<br>or Twitter and earn a bigger discount for<br>each friend who signs up.
+      </p>
       <div class="copy-link brandon"><%= root_url %>?ref=<%= @user.referral_code %></div>
       <% twitter_message = "#Shaving is evolving. Excited for @harrys to launch." %>
       <div class="social-links">
@@ -41,47 +43,66 @@
     end
   }
 %>
-<div class="prizes <% if found %>prize-<%= found["class"] %><% end %>">
-  <div class="page-content">
-    <p class="callout brandon">Here's How It Works:</p>
-    <ul class="products clearfix">
-      <li class="title brandon"><p class="friends">Friends Joined</p><p class="rewards">Discount</p></li>
-      <% stops.each do |stop| %>
-        <li class="product brandon <% if stop["selected"] %>selected<% end %> <% if stop["class"] == 'five' %>last<% end %>">
-          <div class="circle"><%= stop["count"] %></div>
-          <div class="sep"></div>
-          <p><%= stop["html"].html_safe %></p>
 
-          <div class="tooltip">
+<div class="prizes <% if found %>prize-<%= found["class"] %><% end %>">
+  <div class="page-content" style="margin-top: 30px;">
+    <p class="callout brandon">Here's How It Works:</p>
+
+    <ul class="products clearfix">
+
+      <li class="title brandon">
+        <p class="friends"> <span class="dot"> &#9679; </span> Friends Joined </p>
+        <div class="progress"> <div class="mover"> <div class="bar clearfix"></div> </div> </div>
+        <p class="rewards">Discount</p>
+      </li>
+
+      <% stops.each do |stop| %>
+        <li class="product brandon <% if stop["selected"] %>selected<% end %> <% if stop["class"] == 'five' %>last<% end %>" style="text-align: center;">
+          <div style="width: 100%; display: table;">
+            <div class="dots-area">
+              <p class="friends"> &#9679; </p>
+            </div>
+            <div class="letter-area">
+              <div class="circle"><%= stop["count"] %></div>
+            </div>
+          </div>
+          <div class="sep"></div>
+          <div class="progress" style="margin-top: 20px"> </div>
+
+          <div style="width: 100%; display: table;">
+            <div class="dots-area">
+            </div>
+            <div class="letter-area">
+              <p><%= stop["html"].html_safe %></p>
+            </div>
+          </div>         
+
+          <div class="tooltip">            
             <img src="<%= stop["image"] %>" height="254">
           </div>
         </li>
       <% end %>
     </ul>
+  </div>
 
-    <div class="progress">
-      <div class="mover">
-        <div class="bar clearfix"></div>
-      </div>
-    </div>
+  <div style="width: 100%; margin-top: 50px;">
+      <%
+        words = ''
+        if referrals_count == 1
+          words = 'friend has'
+        else
+          words = 'friends have'
+        end
+      %>
 
-    <%
-      words = ''
-      if referrals_count == 1
-        words = 'friend has'
-      else
-        words = 'friends have'
-      end
-    %>
+      <% if referrals_count == 0 %>
+        <p class="place brandon"><span>No</span> friends have joined...Yet!</p>
+      <% else %>
+        <p class="place brandon"><span><%= referrals_count %></span> <%= words %> joined</p>
+      <% end %>
+      <p class="check brandon">Keep checking</p>
 
-    <% if referrals_count == 0 %>
-      <p class="place brandon"><span>No</span> friends have joined...Yet!</p>
-    <% else %>
-      <p class="place brandon"><span><%= referrals_count %></span> <%= words %> joined</p>
-    <% end %>
-    <p class="check brandon">Keep checking</p>
-
-    <p class="ship brandon">We ship to the US only.</p>
-    <a class="policy brandon" href="/privacy-policy" target="_blank">Privacy Policy</a>
+      <p class="ship brandon">We ship to the US only.</p>
+      <a class="policy brandon" href="/privacy-policy" target="_blank">Privacy Policy</a>  
   </div>
 </div>

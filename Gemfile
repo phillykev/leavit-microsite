@@ -5,7 +5,7 @@ ruby '2.5.0'
 gem 'activeadmin', '1.3.0'
 gem 'delayed_job_active_record', '~> 4.1.3'
 gem 'devise', '4.4.0'
-gem 'pg', '~> 0.18'
+gem 'pg', '~> 0.20.0'
 gem 'rails', '< 5.0'
 gem 'unicorn', '5.4.1'
 
