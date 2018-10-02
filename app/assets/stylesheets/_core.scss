@@ -17,11 +17,15 @@ form{
 
 html.home{
 	background: #2b2f33;
+	margin: 0px;
+	padding: 0px;
 }
 
 #home{
 	// padding-bottom: 50px;
 	height: 100%;
+	margin: 0px;
+	padding: 0px;
 }
 
 #home .page-content{
@@ -124,6 +128,9 @@ html.home{
  	width: 100%;
   height: 37px !important;
 
+  -moz-box-sizing: border-box !important;
+  -webkit-box-sizing: border-box !important;
+  box-sizing: border-box !important;
 }
 
 #home .form-wrap .submit{
@@ -268,6 +275,7 @@ html.home{
 
 #refer{
 	background: #FFF;
+	margin: 0px;
 }
 
 #refer .header{
@@ -481,11 +489,13 @@ html.home{
 
 
 #refer .prizes ul.products{
-	height: 105px;
+	// height: 105px;
 	width: 100%;
 	margin-top: 30px;
 	position: relative;
 	z-index: 1;
+	padding: 0px;
+  list-style-type: none !important;
 }
 
 #refer .prizes .products li.title{
@@ -500,10 +510,12 @@ html.home{
 	font-weight: bold;
 }
 
+
 #refer .prizes .products li.title .friends{
 	height: 30px;
 	line-height: 30px;
 	letter-spacing: 2px;
+	margin: 0px !important;
 }
 
 #refer .prizes .products li.title .rewards{
@@ -718,6 +730,10 @@ only screen and (min-device-pixel-ratio: 2) {
 .dots-area {
 	display: table-cell;
 	width: 40%;
+
+	.friends {
+		margin: 0px;
+	}
 }
 
 .letter-area {
@@ -742,7 +758,7 @@ responsive styles
 	}
 
 	#refer .share-wrap{
-		padding: 30px 5px;
+		padding: 30px 0px;
 		width: 100%;
 		display: block;
 	}
