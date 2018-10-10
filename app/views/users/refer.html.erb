@@ -1,6 +1,6 @@
 <div class="header">
   <div class="content">
-    <p class="logo brandon">Harry&#8217;s</p>
+    <p class="logo brandon">Leavit</p>
 <!--     <p class="byline brandon">THANK YOU FOR SIGNING UP</p> -->
   </div>
 </div>
@@ -17,7 +17,7 @@
         Share your unique link via email, Facebook<br>or Twitter and earn a bigger discount for<br>each friend who signs up.
       </p>
       <div class="copy-link brandon"><%= root_url %>?ref=<%= @user.referral_code %></div>
-      <% twitter_message = "#Shaving is evolving. Excited for @harrys to launch." %>
+      <% twitter_message = "Tired of missing packages - can't wait for @justleavit to launch." %>
       <div class="social-links">
         <a href="http://www.facebook.com/sharer/sharer.php?u=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&title=Harrys" class="fb" target="_blank"></a>
         <div class="sep"></div>
@@ -75,10 +75,6 @@
             <div class="letter-area">
               <p><%= stop["html"].html_safe %></p>
             </div>
-          </div>         
-
-          <div class="tooltip">            
-            <img src="<%= stop["image"] %>" height="254">
           </div>
         </li>
       <% end %>
@@ -103,6 +99,6 @@
       <p class="check brandon">Keep checking</p>
 
       <p class="ship brandon">We ship to the US only.</p>
-      <a class="policy brandon" href="/privacy-policy" target="_blank">Privacy Policy</a>  
+      <a class="policy brandon" href="/privacy-policy" target="_blank">Privacy Policy</a>
   </div>
 </div>
