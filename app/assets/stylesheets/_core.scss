@@ -119,10 +119,10 @@ html.home{
   background-color: white;
   border-radius: 0;
   outline: 0;
- 
+
   margin-bottom: 0px;
   padding: 0px 28px 0px 5px !important;
- 
+
  	border-style: none !important;
  	max-width:300px !important;
  	width: 100%;
@@ -340,8 +340,6 @@ html.home{
 	// width: 612px;
 	height: 394px;
 
-	background: image-url("refer/handingpackage.jpg") 0 0 no-repeat;
-	background-size: 100% 100%;
 	overflow: hidden;
 	// float: left;
 	display: table-cell;
@@ -745,7 +743,7 @@ only screen and (min-device-pixel-ratio: 2) {
 responsive styles
 */
 
-@media (max-width: 1120px) { 
+@media (max-width: 1120px) {
 	#refer .page-content{
 		display: block;
 		text-align: center;
@@ -764,14 +762,14 @@ responsive styles
 	}
 }
 
-@media (max-width: 858px) { 
+@media (max-width: 858px) {
 	#home .hero{
 		background-size: auto 100%;
 	}
 
 }
 
-@media (max-width: 496px) { 
+@media (max-width: 496px) {
 	.dot {
 		display: none;
 	}
