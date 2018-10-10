@@ -37,7 +37,7 @@ class User < ActiveRecord::Base
     },
     {
       'count' => 50,
-      'html' => 'Free Leavit',
+      'html' => '75% Discount',
       'class' => 'five',
       'image' => ActionController::Base.helpers.asset_path(
         'refer/blade-explain@2x.png')
