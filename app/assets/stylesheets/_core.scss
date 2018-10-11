@@ -480,10 +480,10 @@ html.home{
 	background-size: 1px 4px;
 }
 
-#refer .prize-two .progress .mover .bar{ width: 312px; }
-#refer .prize-three .progress .mover .bar{ width: 566px; }
-#refer .prize-four .progress .mover .bar{ width: 820px; }
-#refer .prize-five .progress .mover .bar{ width: 1120px; }
+#refer .prize-two .progress .mover .bar{ width: 185%; }
+#refer .prize-three .progress .mover .bar{ width: 275%; }
+#refer .prize-four .progress .mover .bar{ width: 415%; }
+#refer .prize-five .progress .mover .bar{ width: 550%; }
 
 
 #refer .prizes ul.products{
@@ -704,12 +704,7 @@ only screen and (min-device-pixel-ratio: 2) {
 	}
 
 	#refer .prizes .progress .mover .bar{
-		background: image-url("refer/progress-done@2x.png") 0 0 repeat-x;
-		background-size: 1px 4px;
-	}
-
- .selected > .progress {
-		background: image-url("refer/progress-done@2x.png") 0 0 repeat-x;
+		background: image-url("refer/progress-done.png") 0 0 repeat-x;
 		background-size: 1px 4px;
 	}
 
