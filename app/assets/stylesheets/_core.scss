@@ -705,6 +705,8 @@ only screen and (min-device-pixel-ratio: 2) {
 	#refer .prizes .progress .mover .bar{
 		background: image-url("refer/progress-done.png") 0 0 repeat-x;
 		background-size: 1px 4px;
+		z-index: 99;
+		position: relative;
 	}
 
 	#refer .prizes .progress .mover .razor{
