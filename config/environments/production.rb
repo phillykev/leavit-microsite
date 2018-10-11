@@ -77,6 +77,7 @@ Prelaunchr::Application.configure do
   config.action_mailer.default_url_options = { :host => ENV['DEFAULT_MAILER_HOST'] }
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
+  config.log_level = :debug
   config.log_formatter = ::Logger::Formatter.new
 
   # Log the query plan for queries taking more than this (works
