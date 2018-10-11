@@ -19,7 +19,7 @@ class User < ActiveRecord::Base
       'html' => '$10 Discount',
       'class' => 'two',
       'image' =>  ActionController::Base.helpers.asset_path(
-        '')
+        'refer/10dollar.jpg')
     },
     {
       'count' => 10,
