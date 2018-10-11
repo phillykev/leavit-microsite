@@ -458,7 +458,6 @@ html.home{
 
 #refer .prizes .progress{
 	margin-top: 35px;
-	margin-bottom: 15px;
 	height: 4px;
 	width: 100%;
 	background: image-url("refer/progress-bg.png") 0 0 repeat-x;
@@ -699,7 +698,7 @@ only screen and (min-device-pixel-ratio: 2) {
 	}
 
 	#refer .prizes .progress{
-		background: image-url("refer/progress-bg@2x.png") 0 0 repeat-x;
+		background: image-url("refer/progress-bg.png") 0 0 repeat-x;
 		background-size: 1px 4px;
 	}
 
