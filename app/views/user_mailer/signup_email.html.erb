@@ -33,7 +33,7 @@
           <tr>
             <td style="padding: 22px 0 0;">
               <center>
-                <img src="<%= ENV['DEFAULT_MAILER_HOST'] %>/assets/email/harrys-is-coming.jpg" alt="Harry's Is Live! We're launcing a new shave brand. You'll be the first to know." style="display: block; margin: 0 auto; padding: 0; border: 0;">
+                <img src="<%= ENV['DEFAULT_MAILER_HOST'] %><%= asset_path('email/harrys-is-coming.jpg') %>" alt="Harry's Is Live! We're launcing a new shave brand. You'll be the first to know." style="display: block; margin: 0 auto; padding: 0; border: 0;">
               </center>
             </td>
           </tr>
@@ -42,7 +42,7 @@
           <tr>
             <td style="padding: 60px 0 0;">
               <center>
-                <img src="<%= ENV['DEFAULT_MAILER_HOST'] %>/assets/email/refer.jpg" alt="Refer Friends, Earn Rewards" style="display: block; margin: 0 auto; padding: 0; border: 0;">
+                <img src="<%= ENV['DEFAULT_MAILER_HOST'] %><%= asset_path('email/refer.jpg') %>" alt="Refer Friends, Earn Rewards" style="display: block; margin: 0 auto; padding: 0; border: 0;">
               </center>
             </td>
           </tr>
