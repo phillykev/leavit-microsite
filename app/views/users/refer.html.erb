@@ -15,7 +15,7 @@
         Share your unique link via email, Facebook<br>or Twitter and earn a bigger discount for<br>each friend who signs up.
       </p>
       <div class="copy-link brandon"><%= root_url %>?ref=<%= @user.referral_code %></div>
-      <% twitter_message = "So excited for @justleavit to launch so I can get packages safely delivered to my house!" %>
+      <% twitter_message = "So excited to have packages delivered safely to my house @justleavit" %>
       <div class="social-links">
         <a href="http://www.facebook.com/sharer/sharer.php?u=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&title=Harrys" class="fb" target="_blank"></a>
         <div class="sep"></div>
