@@ -1,10 +1,10 @@
 Prelaunchr
 ==========
 
-[![Build Status](https://travis-ci.org/harrystech/prelaunchr.svg?branch=master)](https://travis-ci.org/harrystech/prelaunchr)
+[![Build Status](https://travis-ci.org/LEAVITstech/prelaunchr.svg?branch=master)](https://travis-ci.org/LEAVITstech/prelaunchr)
 
-Originally open sourced over on our [engineering blog](http://engineering.harrys.com/2014/07/21/dont-launch-crickets.html),
-and discussed in great detail over at [Tim Ferriss' Blog](http://fourhourworkweek.com/2014/07/21/harrys-prelaunchr-email),
+Originally open sourced over on our [engineering blog](http://engineering.LEAVITs.com/2014/07/21/dont-launch-crickets.html),
+and discussed in great detail over at [Tim Ferriss' Blog](http://fourhourworkweek.com/2014/07/21/LEAVITs-prelaunchr-email),
 Prelaunchr is a skeleton Rails application for quickly starting a viral
 prelaunch campaign for new companies or products. The campaign is conducive to
 social sharing and has prize levels based on the number of people each person
@@ -105,5 +105,5 @@ launched site.
 The code, documentation, non-branded copy and configuration are released under
 the MIT license. Any branded assets are included only to illustrate and inspire.
 
-Please change the artwork to use your own brand! Harry's does not give
+Please change the artwork to use your own brand! LEAVIT's does not give
 you permission to use our brand or trademarks in your own marketing.
