@@ -21,6 +21,22 @@ html.home{
 	padding: 0px;
 }
 
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+}
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
 #home{
 	// padding-bottom: 50px;
 	height: 100%;
@@ -37,7 +53,7 @@ html.home{
 	margin: 0;
 	width: 100%;
 	height: 405px;
-	background: image-url("home/productshotdark.jpg") center top no-repeat;
+	//background: image-url("home/productshotdark.jpg") center top no-repeat;
 	background-size: 100% auto;
 	overflow: hidden;
 	display: table;
@@ -340,7 +356,7 @@ html.home{
 	// width: 612px;
 	height: 394px;
 	background: image-url("refer/productshot.png") 0 0 no-repeat;
-	background-size: 610px 394px;
+	background-size: 100% 100%;
 
 	overflow: hidden;
 	// float: left;
@@ -762,6 +778,9 @@ responsive styles
 		padding: 30px 0px;
 		width: 100%;
 		display: block;
+	}
+	#home .hero {
+    background: url(/assets/home/productshotdark-4660c1b….jpg) center top no-repeat;
 	}
 }
 
